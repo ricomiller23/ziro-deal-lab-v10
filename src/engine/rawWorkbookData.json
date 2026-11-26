@@ -1,0 +1,2221 @@
+{
+  "assumptions": {
+    "R1": {
+      "row": 1,
+      "label": "Ziro Health \u2014 Assumptions",
+      "value": null,
+      "unit": null,
+      "badge": null,
+      "note": null
+    },
+    "R2": {
+      "row": 2,
+      "label": "Blue = input \u00b7 Black = formula \u00b7 Green = link from another tab \u00b7 Yellow fill = assumption to validate with real data",
+      "value": null,
+      "unit": null,
+      "badge": null,
+      "note": null
+    },
+    "R5": {
+      "row": 5,
+      "label": "GENERAL",
+      "value": null,
+      "unit": null,
+      "badge": null,
+      "note": null
+    },
+    "R6": {
+      "row": 6,
+      "label": "FX rate GBP \u2192 EUR",
+      "value": 1.17,
+      "unit": "EUR per GBP",
+      "badge": "ASSUMPTION",
+      "note": "Nicoya lists in GBP. Update to current rate."
+    },
+    "R7": {
+      "row": 7,
+      "label": "FX rate USD \u2192 EUR",
+      "value": 0.86,
+      "unit": "EUR per USD",
+      "badge": "ASSUMPTION",
+      "note": "Applied to USD-denominated salaries, tools and Nicoya app fees."
+    },
+    "R8": {
+      "row": 8,
+      "label": "Payment processing fee",
+      "value": 0.02,
+      "unit": "% of revenue",
+      "badge": "ASSUMPTION",
+      "note": "Typical EU card processing (c.1.5% + EUR0.25)."
+    },
+    "R9": {
+      "row": 9,
+      "label": "Opening cash / funding raised",
+      "value": 0,
+      "unit": "EUR",
+      "badge": "TBC",
+      "note": "Round size TBC. Leave at 0 to read the peak funding need directly."
+    },
+    "R11": {
+      "row": 11,
+      "label": "PRICING & PRODUCT",
+      "value": null,
+      "unit": null,
+      "badge": null,
+      "note": null
+    },
+    "R12": {
+      "row": 12,
+      "label": "Annual membership price",
+      "value": 199,
+      "unit": "EUR / year",
+      "badge": "CONFIRMED",
+      "note": "Includes one annual test of up to 30 biomarkers."
+    },
+    "R13": {
+      "row": 13,
+      "label": "Optimize retest price, per billing cycle",
+      "value": 99,
+      "unit": "EUR / cycle",
+      "badge": "CONFIRMED",
+      "note": "Same price whether billed monthly or quarterly."
+    },
+    "R14": {
+      "row": 14,
+      "label": "Share of Optimize subscribers billed monthly (vs quarterly)",
+      "value": 0.5,
+      "unit": "%",
+      "badge": "ASSUMPTION",
+      "note": "Placeholder 50/50 split; replace with cohort data."
+    },
+    "R16": {
+      "row": 16,
+      "label": "COST OF GOODS",
+      "value": null,
+      "unit": null,
+      "badge": null,
+      "note": null
+    },
+    "R17": {
+      "row": 17,
+      "label": "Baseline test all-in cost (lab + Tasso+ device + kit/courier)",
+      "value": 115,
+      "unit": "EUR / test",
+      "badge": "CONFIRMED",
+      "note": "Supplier range EUR110\u2013140; EUR115 used. Device cost included."
+    },
+    "R18": {
+      "row": 18,
+      "label": "Optimize retest all-in cost",
+      "value": 45,
+      "unit": "EUR / test",
+      "badge": "CONFIRMED",
+      "note": "Supplier guidance ~EUR40+. Device/kit included."
+    },
+    "R19": {
+      "row": 19,
+      "label": "Lab report pages per sample (AI extraction)",
+      "value": 3,
+      "unit": "pages",
+      "badge": "ASSUMPTION",
+      "note": "Applies only if PDF extraction is used (lab delivers HL7 via API)."
+    },
+    "R20": {
+      "row": 20,
+      "label": "AI extraction cost per page",
+      "value": 0.07,
+      "unit": "USD / page",
+      "badge": "CONFIRMED",
+      "note": "Nicoya average $0.07/page."
+    },
+    "R22": {
+      "row": 22,
+      "label": "MEMBERSHIP, RETENTION & ATTACH",
+      "value": null,
+      "unit": null,
+      "badge": null,
+      "note": null
+    },
+    "R23": {
+      "row": 23,
+      "label": "New memberships in launch quarter (Q4 2026)",
+      "value": 2000,
+      "unit": "memberships",
+      "badge": "TARGET",
+      "note": "Management target: at least 2,000."
+    },
+    "R24": {
+      "row": 24,
+      "label": "Annual renewal rate (baseline membership)",
+      "value": 0.6,
+      "unit": "% of members",
+      "badge": "ASSUMPTION",
+      "note": "Top of consumer-health subscription range (40\u201360%)."
+    },
+    "R25": {
+      "row": 25,
+      "label": "Optimize attach rate (% of active members enrolled)",
+      "value": 0.3,
+      "unit": "% of members",
+      "badge": "ASSUMPTION",
+      "note": "Key sensitivity \u2014 no public benchmark for an annual-test-plus-opt-in model. Replace with real data."
+    },
+    "R26": {
+      "row": 26,
+      "label": "Reference only: flat blended CAC used in earlier pro forma",
+      "value": 99,
+      "unit": "EUR",
+      "badge": "REFERENCE",
+      "note": "Not used in calculations. The model now uses the bottom-up CAC on the CAC tab."
+    },
+    "R28": {
+      "row": 28,
+      "label": "CLINICAL INTELLIGENCE PLATFORM \u2014 NICOYA (supplier pricing page, Sep 2026)",
+      "value": null,
+      "unit": null,
+      "badge": null,
+      "note": null
+    },
+    "R29": {
+      "row": 29,
+      "label": "Premier plan base fee",
+      "value": 730,
+      "unit": "GBP / month",
+      "badge": "CONFIRMED",
+      "note": null
+    },
+    "R30": {
+      "row": 30,
+      "label": "Clients included in Premier plan",
+      "value": 100,
+      "unit": "clients",
+      "badge": "CONFIRMED",
+      "note": null
+    },
+    "R31": {
+      "row": 31,
+      "label": "Additional client fee, above included",
+      "value": 7,
+      "unit": "GBP / client / month",
+      "badge": "CONFIRMED",
+      "note": "Charged on active members above 100. At scale this is c.EUR98 per member per year \u2014 negotiate volume pricing."
+    },
+    "R32": {
+      "row": 32,
+      "label": "Managed white-label mobile app, ongoing",
+      "value": 10000,
+      "unit": "USD / month",
+      "badge": "CONFIRMED",
+      "note": "Largest single fixed overhead line."
+    },
+    "R33": {
+      "row": 33,
+      "label": "Managed white-label mobile app, setup",
+      "value": 5000,
+      "unit": "USD",
+      "badge": "CONFIRMED",
+      "note": "One-off."
+    },
+    "R34": {
+      "row": 34,
+      "label": "Mobile SDK setup",
+      "value": 2500,
+      "unit": "USD",
+      "badge": "CONFIRMED",
+      "note": "One-off."
+    },
+    "R36": {
+      "row": 36,
+      "label": "OVERHEAD DRIVERS (line items are built on the Overhead tab)",
+      "value": null,
+      "unit": null,
+      "badge": null,
+      "note": null
+    },
+    "R37": {
+      "row": 37,
+      "label": "Notion per-seat cost",
+      "value": 19.5,
+      "unit": "EUR / month / head",
+      "badge": "CONFIRMED",
+      "note": "Multiplied by headcount."
+    },
+    "R38": {
+      "row": 38,
+      "label": "Contingency (% of people + tech stack)",
+      "value": 0.1,
+      "unit": "%",
+      "badge": "ASSUMPTION",
+      "note": "Covers deviation and growth needs across departments."
+    },
+    "R39": {
+      "row": 39,
+      "label": "Branding (one-off)",
+      "value": 980,
+      "unit": "USD",
+      "badge": "CONFIRMED",
+      "note": null
+    },
+    "R40": {
+      "row": 40,
+      "label": "Trademarks (one-off, approx.)",
+      "value": 5000,
+      "unit": "USD",
+      "badge": "CONFIRMED",
+      "note": null
+    },
+    "R42": {
+      "row": 42,
+      "label": "YEAR-BY-YEAR DRIVERS",
+      "value": null,
+      "unit": null,
+      "badge": null,
+      "note": null
+    },
+    "R43": {
+      "row": 43,
+      "label": "Year",
+      "value": 2026,
+      "unit": 2027,
+      "badge": 2028,
+      "note": null
+    },
+    "R44": {
+      "row": 44,
+      "label": "Quarter-on-quarter growth in new memberships",
+      "value": 0,
+      "unit": 0.8,
+      "badge": 0.2,
+      "note": "2026 not used (launch quarter only). 2027 = launch-year surge; 2028\u201331 taper. Management case reaches c.740k active members by Q4 2031 (c.1.0% of UK + Ireland)."
+    },
+    "R45": {
+      "row": 45,
+      "label": "Monthly salary per head (USD)",
+      "value": 5000,
+      "unit": 5000,
+      "badge": 5000,
+      "note": "$5,000/month per person at launch, held flat. Employer on-costs are an optional add-on on the Overhead tab."
+    },
+    "R47": {
+      "row": 47,
+      "label": "COMPUTED \u2014 BLENDED OPTIMIZE ECONOMICS PER ATTACHED MEMBER PER QUARTER",
+      "value": null,
+      "unit": null,
+      "badge": null,
+      "note": null
+    },
+    "R48": {
+      "row": 48,
+      "label": "Blended Optimize tests per attached member per quarter",
+      "value": 2,
+      "unit": "tests",
+      "badge": "CALC",
+      "note": "Monthly subscribers: 3 per quarter; quarterly subscribers: 1."
+    },
+    "R49": {
+      "row": 49,
+      "label": "Blended Optimize revenue per attached member per quarter",
+      "value": 198,
+      "unit": "EUR",
+      "badge": "CALC",
+      "note": null
+    },
+    "R50": {
+      "row": 50,
+      "label": "Blended Optimize cost per attached member per quarter",
+      "value": 90,
+      "unit": "EUR",
+      "badge": "CALC",
+      "note": null
+    }
+  },
+  "overhead": {
+    "R1": {
+      "row": 1,
+      "label": "Ziro Health \u2014 Overhead build (EUR)",
+      "values": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "note": null
+    },
+    "R2": {
+      "row": 2,
+      "label": "Fixed overhead only: people, platform, tech stack, contingency. Customer acquisition is built separately on the CAC tab; cost of sales is in the P&L.",
+      "values": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "note": null
+    },
+    "R4": {
+      "row": 4,
+      "label": "EUR",
+      "values": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030,
+        2031
+      ],
+      "note": "Notes"
+    },
+    "R5": {
+      "row": 5,
+      "label": "Months in period",
+      "values": [
+        3,
+        12,
+        12,
+        12,
+        12,
+        12
+      ],
+      "note": "2026 is the launch quarter only (Oct\u2013Dec)."
+    },
+    "R7": {
+      "row": 7,
+      "label": "HEADCOUNT (FTE)",
+      "values": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "note": null
+    },
+    "R8": {
+      "row": 8,
+      "label": "Leadership / founders",
+      "values": [
+        2,
+        2,
+        2,
+        2,
+        3,
+        3
+      ],
+      "note": "Founders and senior hires."
+    },
+    "R9": {
+      "row": 9,
+      "label": "Growth & marketing",
+      "values": [
+        1,
+        1,
+        3,
+        3,
+        4,
+        5
+      ],
+      "note": "One growth lead at launch; scales with paid spend. Cost counts toward fully-loaded CAC."
+    },
+    "R10": {
+      "row": 10,
+      "label": "Operations & customer care",
+      "values": [
+        1,
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "note": "Order fulfilment, results queries, support."
+    },
+    "R11": {
+      "row": 11,
+      "label": "Product, data & engineering",
+      "values": [
+        1,
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "note": "Product, data and integrations."
+    },
+    "R12": {
+      "row": 12,
+      "label": "Total headcount",
+      "values": [
+        5,
+        5,
+        10,
+        12,
+        16,
+        20
+      ],
+      "note": "Plan: 5 / 5 / 10 / 12 / 16 / 20 (unchanged from the source pro forma)."
+    },
+    "R13": {
+      "row": 13,
+      "label": "Monthly salary per head (USD)",
+      "values": [
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000
+      ],
+      "note": null
+    },
+    "R15": {
+      "row": 15,
+      "label": "MONTHLY RUN-RATE COST (EUR / month)",
+      "values": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "note": null
+    },
+    "R16": {
+      "row": 16,
+      "label": "People",
+      "values": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "note": null
+    },
+    "R17": {
+      "row": 17,
+      "label": "  Leadership / founders",
+      "values": [
+        8600,
+        8600,
+        8600,
+        8600,
+        12900,
+        12900
+      ],
+      "note": null
+    },
+    "R18": {
+      "row": 18,
+      "label": "  Growth & marketing",
+      "values": [
+        4300,
+        4300,
+        12900,
+        12900,
+        17200,
+        21500
+      ],
+      "note": null
+    },
+    "R19": {
+      "row": 19,
+      "label": "  Operations & customer care",
+      "values": [
+        4300,
+        4300,
+        12900,
+        17200,
+        21500,
+        25800
+      ],
+      "note": null
+    },
+    "R20": {
+      "row": 20,
+      "label": "  Product, data & engineering",
+      "values": [
+        4300,
+        4300,
+        8600,
+        12900,
+        17200,
+        25800
+      ],
+      "note": null
+    },
+    "R21": {
+      "row": 21,
+      "label": "People subtotal",
+      "values": [
+        21500,
+        21500,
+        43000,
+        51600,
+        68800,
+        86000
+      ],
+      "note": null
+    },
+    "R22": {
+      "row": 22,
+      "label": "Clinical-intelligence platform (Nicoya)",
+      "values": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "note": null
+    },
+    "R23": {
+      "row": 23,
+      "label": "  Premier plan base fee",
+      "values": [
+        854.1,
+        854.1,
+        854.1,
+        854.1,
+        854.1,
+        854.1
+      ],
+      "note": "GBP730/month. Per-client fees above 100 members sit in cost of sales."
+    },
+    "R24": {
+      "row": 24,
+      "label": "  Managed white-label mobile app",
+      "values": [
+        8600,
+        8600,
+        8600,
+        8600,
+        8600,
+        8600
+      ],
+      "note": "$10,000/month \u2014 the largest non-people line. A web-first launch would defer this."
+    },
+    "R25": {
+      "row": 25,
+      "label": "Platform subtotal",
+      "values": [
+        9454.1,
+        9454.1,
+        9454.1,
+        9454.1,
+        9454.1,
+        9454.1
+      ],
+      "note": null
+    },
+    "R26": {
+      "row": 26,
+      "label": "Tech stack & tools",
+      "values": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "note": null
+    },
+    "R27": {
+      "row": 27,
+      "label": "  CRM (Attio)",
+      "values": [
+        1860,
+        1860,
+        1860,
+        1860,
+        1860,
+        1860
+      ],
+      "note": null
+    },
+    "R28": {
+      "row": 28,
+      "label": "  Email automation (Brevo)",
+      "values": [
+        69,
+        69,
+        69,
+        69,
+        69,
+        69
+      ],
+      "note": "Acquisition tool"
+    },
+    "R29": {
+      "row": 29,
+      "label": "  Google Workspace",
+      "values": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "note": null
+    },
+    "R30": {
+      "row": 30,
+      "label": "  UGC / creative subscriptions",
+      "values": [
+        286.38,
+        286.38,
+        286.38,
+        286.38,
+        286.38,
+        286.38
+      ],
+      "note": "Acquisition tool"
+    },
+    "R31": {
+      "row": 31,
+      "label": "  Native.co",
+      "values": [
+        171.14,
+        171.14,
+        171.14,
+        171.14,
+        171.14,
+        171.14
+      ],
+      "note": "Acquisition tool"
+    },
+    "R32": {
+      "row": 32,
+      "label": "  AI tools (Claude / Gemini)",
+      "values": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "note": null
+    },
+    "R33": {
+      "row": 33,
+      "label": "  Hosting",
+      "values": [
+        29,
+        29,
+        29,
+        29,
+        29,
+        29
+      ],
+      "note": null
+    },
+    "R34": {
+      "row": 34,
+      "label": "  Accounting software",
+      "values": [
+        19,
+        19,
+        19,
+        19,
+        19,
+        19
+      ],
+      "note": null
+    },
+    "R35": {
+      "row": 35,
+      "label": "  Social media tools",
+      "values": [
+        35,
+        35,
+        35,
+        35,
+        35,
+        35
+      ],
+      "note": "Acquisition tool"
+    },
+    "R36": {
+      "row": 36,
+      "label": "  Postgres database",
+      "values": [
+        19,
+        19,
+        19,
+        19,
+        19,
+        19
+      ],
+      "note": null
+    },
+    "R37": {
+      "row": 37,
+      "label": "  Notion seats",
+      "values": [
+        97.5,
+        97.5,
+        195,
+        234,
+        312,
+        390
+      ],
+      "note": null
+    },
+    "R38": {
+      "row": 38,
+      "label": "Tech stack subtotal",
+      "values": [
+        2886.02,
+        2886.02,
+        2983.52,
+        3022.52,
+        3100.52,
+        3178.52
+      ],
+      "note": "Fixed items total EUR2,788.52/month, as in the source pro forma."
+    },
+    "R39": {
+      "row": 39,
+      "label": "Core overhead before contingency",
+      "values": [
+        33840.12,
+        33840.12,
+        55437.62,
+        64076.62,
+        81354.62,
+        98632.62
+      ],
+      "note": null
+    },
+    "R40": {
+      "row": 40,
+      "label": "Contingency (% of people + tech stack)",
+      "values": [
+        2438.602,
+        2438.602,
+        4598.352,
+        5462.252,
+        7190.052,
+        8917.852
+      ],
+      "note": "Same basis as the source pro forma."
+    },
+    "R41": {
+      "row": 41,
+      "label": "Add-ons not in the base brief (OFF by default)",
+      "values": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "note": null
+    },
+    "R42": {
+      "row": 42,
+      "label": "  Include add-ons? (1 = yes, 0 = no)",
+      "values": [
+        0,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "note": "These costs are real but are not in the ~EUR400k brief. Switch on to see the fully-costed overhead."
+    },
+    "R43": {
+      "row": 43,
+      "label": "  Employer on-costs (% of salaries: PRSI/NI, pension)",
+      "values": [
+        0.1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "note": null
+    },
+    "R44": {
+      "row": 44,
+      "label": "  Clinical governance retainer (EUR / month)",
+      "values": [
+        2000,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "note": "Part-time medical director / GP review of out-of-range results."
+    },
+    "R45": {
+      "row": 45,
+      "label": "  Insurance: PI, product liability, cyber (EUR / month)",
+      "values": [
+        1000,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "note": null
+    },
+    "R46": {
+      "row": 46,
+      "label": "  Legal, compliance, GDPR/DPO & audit (EUR / month)",
+      "values": [
+        2000,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "note": null
+    },
+    "R47": {
+      "row": 47,
+      "label": "  Employer on-costs",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "note": null
+    },
+    "R48": {
+      "row": 48,
+      "label": "  Clinical governance",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "note": null
+    },
+    "R49": {
+      "row": 49,
+      "label": "  Insurance",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "note": null
+    },
+    "R50": {
+      "row": 50,
+      "label": "  Legal, compliance & audit",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "note": null
+    },
+    "R51": {
+      "row": 51,
+      "label": "Add-ons subtotal",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "note": null
+    },
+    "R53": {
+      "row": 53,
+      "label": "TOTAL MONTHLY OVERHEAD",
+      "values": [
+        36278.722,
+        36278.722,
+        60035.972,
+        69538.872,
+        88544.672,
+        107550.472
+      ],
+      "note": null
+    },
+    "R55": {
+      "row": 55,
+      "label": "ANNUAL OVERHEAD (P&L period, EUR)",
+      "values": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "note": null
+    },
+    "R56": {
+      "row": 56,
+      "label": "Recurring overhead",
+      "values": [
+        108836.166,
+        435344.664,
+        720431.664,
+        834466.464,
+        1062536.064,
+        1290605.664
+      ],
+      "note": null
+    },
+    "R57": {
+      "row": 57,
+      "label": "One-off launch costs",
+      "values": [
+        11592.8,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "note": "Branding, trademarks, Nicoya app + SDK setup \u2014 Q4 2026 only."
+    },
+    "R58": {
+      "row": 58,
+      "label": "Total overhead in P&L",
+      "values": [
+        120428.966,
+        435344.664,
+        720431.664,
+        834466.464,
+        1062536.064,
+        1290605.664
+      ],
+      "note": null
+    },
+    "R59": {
+      "row": 59,
+      "label": "Annualised run-rate (monthly \u00d7 12)",
+      "values": [
+        435344.664,
+        435344.664,
+        720431.664,
+        834466.464,
+        1062536.064,
+        1290605.664
+      ],
+      "note": null
+    },
+    "R60": {
+      "row": 60,
+      "label": "Brief: approx. annual overhead",
+      "values": [
+        null,
+        400000,
+        null,
+        null,
+        null,
+        null
+      ],
+      "note": "Management brief for the first full year."
+    },
+    "R61": {
+      "row": 61,
+      "label": "Core run-rate before contingency vs brief (2027)",
+      "values": [
+        null,
+        6081.43999999994,
+        null,
+        null,
+        null,
+        null
+      ],
+      "note": null
+    },
+    "R62": {
+      "row": 62,
+      "label": "  as % of brief",
+      "values": [
+        null,
+        0.0152035999999999,
+        null,
+        null,
+        null,
+        null
+      ],
+      "note": null
+    },
+    "R64": {
+      "row": 64,
+      "label": "ANNUALISED OVERHEAD BREAKDOWN (EUR, monthly \u00d7 12)",
+      "values": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "note": null
+    },
+    "R65": {
+      "row": 65,
+      "label": "People (salaries)",
+      "values": [
+        258000,
+        258000,
+        516000,
+        619200,
+        825600,
+        1032000
+      ],
+      "note": null
+    },
+    "R66": {
+      "row": 66,
+      "label": "Nicoya platform & white-label app",
+      "values": [
+        113449.2,
+        113449.2,
+        113449.2,
+        113449.2,
+        113449.2,
+        113449.2
+      ],
+      "note": null
+    },
+    "R67": {
+      "row": 67,
+      "label": "Tech stack & tools",
+      "values": [
+        34632.24,
+        34632.24,
+        35802.24,
+        36270.24,
+        37206.24,
+        38142.24
+      ],
+      "note": null
+    },
+    "R68": {
+      "row": 68,
+      "label": "Contingency",
+      "values": [
+        29263.224,
+        29263.224,
+        55180.224,
+        65547.024,
+        86280.624,
+        107014.224
+      ],
+      "note": null
+    },
+    "R69": {
+      "row": 69,
+      "label": "Add-ons (if switched on)",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "note": null
+    },
+    "R70": {
+      "row": 70,
+      "label": "Total annualised overhead",
+      "values": [
+        435344.664,
+        435344.664,
+        720431.664,
+        834466.464,
+        1062536.064,
+        1290605.664
+      ],
+      "note": null
+    },
+    "R71": {
+      "row": 71,
+      "label": "Of which: growth team + acquisition tools (annualised)",
+      "values": [
+        58338.24,
+        58338.24,
+        161538.24,
+        161538.24,
+        213138.24,
+        264738.24
+      ],
+      "note": "Growth & marketing salaries + Brevo, UGC, Native.co, social tools. Allocated into fully-loaded CAC."
+    },
+    "R72": {
+      "row": 72,
+      "label": "Same, for the P&L period (monthly \u00d7 months in period)",
+      "values": [
+        14584.56,
+        58338.24,
+        161538.24,
+        161538.24,
+        213138.24,
+        264738.24
+      ],
+      "note": null
+    }
+  },
+  "cac": {
+    "R1": {
+      "row": 1,
+      "label": "Ziro Health \u2014 Customer acquisition cost build (EUR per new membership)",
+      "val": null,
+      "vals": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "R2": {
+      "row": 2,
+      "label": "Bottom-up by channel. Renewals carry no acquisition cost. All blue cells are inputs; yellow = assumption to validate with live campaign data.",
+      "val": null,
+      "vals": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "R4": {
+      "row": 4,
+      "label": "A. CHANNEL ECONOMICS \u2014 base CAC per new member, before the scale index",
+      "val": null,
+      "vals": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "R5": {
+      "row": 5,
+      "label": "Paid social (Meta / Instagram / TikTok)",
+      "val": null,
+      "vals": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "R6": {
+      "row": 6,
+      "label": "  CPM (EUR per 1,000 impressions)",
+      "val": 12,
+      "vals": [
+        12,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "R7": {
+      "row": 7,
+      "label": "  Click-through rate",
+      "val": 0.009,
+      "vals": [
+        0.009,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "R8": {
+      "row": 8,
+      "label": "  Click \u2192 paid membership conversion",
+      "val": 0.011,
+      "vals": [
+        0.011,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "R9": {
+      "row": 9,
+      "label": "  Cost per click",
+      "val": 1.33333333333333,
+      "vals": [
+        1.33333333333333,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "R10": {
+      "row": 10,
+      "label": "  Paid social CAC",
+      "val": 121.212121212121,
+      "vals": [
+        121.212121212121,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "R12": {
+      "row": 12,
+      "label": "Paid search (Google)",
+      "val": null,
+      "vals": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "R13": {
+      "row": 13,
+      "label": "  Cost per click (EUR)",
+      "val": 2.8,
+      "vals": [
+        2.8,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "R14": {
+      "row": 14,
+      "label": "  Click \u2192 paid membership conversion",
+      "val": 0.035,
+      "vals": [
+        0.035,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "R15": {
+      "row": 15,
+      "label": "  Paid search CAC",
+      "val": 80,
+      "vals": [
+        80,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "R17": {
+      "row": 17,
+      "label": "Creator / UGC / influencer",
+      "val": null,
+      "vals": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "R18": {
+      "row": 18,
+      "label": "  Fee per creator campaign (EUR)",
+      "val": 800,
+      "vals": [
+        800,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "R19": {
+      "row": 19,
+      "label": "  Seeded test kit cost (EUR)",
+      "val": 115,
+      "vals": [
+        115,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "R20": {
+      "row": 20,
+      "label": "  Paid memberships attributed per creator",
+      "val": 10,
+      "vals": [
+        10,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "R21": {
+      "row": 21,
+      "label": "  Creator CAC",
+      "val": 91.5,
+      "vals": [
+        91.5,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "R23": {
+      "row": 23,
+      "label": "Affiliates & partnerships (gyms, PTs, clinics, newsletters, podcasts)",
+      "val": null,
+      "vals": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "R24": {
+      "row": 24,
+      "label": "  Commission (% of first-year price)",
+      "val": 0.2,
+      "vals": [
+        0.2,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "R25": {
+      "row": 25,
+      "label": "  Network / management fee on commission",
+      "val": 0.1,
+      "vals": [
+        0.1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "R26": {
+      "row": 26,
+      "label": "  Affiliate CAC",
+      "val": 43.78,
+      "vals": [
+        43.78,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "R28": {
+      "row": 28,
+      "label": "Member referral",
+      "val": null,
+      "vals": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "R29": {
+      "row": 29,
+      "label": "  Referrer credit (EUR)",
+      "val": 20,
+      "vals": [
+        20,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "R30": {
+      "row": 30,
+      "label": "  New-member discount (EUR)",
+      "val": 20,
+      "vals": [
+        20,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "R31": {
+      "row": 31,
+      "label": "  Referral CAC (per converted member)",
+      "val": 40,
+      "vals": [
+        40,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "R33": {
+      "row": 33,
+      "label": "Organic (SEO, content, PR, community)",
+      "val": null,
+      "vals": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "R34": {
+      "row": 34,
+      "label": "  Variable content / SEO cost per organic member (EUR)",
+      "val": 6,
+      "vals": [
+        6,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "R36": {
+      "row": 36,
+      "label": "B2B / corporate wellness (from 2029)",
+      "val": null,
+      "vals": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "R37": {
+      "row": 37,
+      "label": "  Sales commission per enrolled employee (EUR)",
+      "val": 45,
+      "vals": [
+        45,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "R39": {
+      "row": 39,
+      "label": "Creative production & testing (EUR per new member, all channels)",
+      "val": 5,
+      "vals": [
+        5,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "R41": {
+      "row": 41,
+      "label": "B. PAID-CHANNEL COST INDEX",
+      "val": null,
+      "vals": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "R42": {
+      "row": 42,
+      "label": "Year",
+      "val": 2026,
+      "vals": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030,
+        2031
+      ]
+    },
+    "R43": {
+      "row": 43,
+      "label": "Paid-channel cost index (1.00 = steady state)",
+      "val": 1.3,
+      "vals": [
+        1.3,
+        1.1,
+        1,
+        1.1,
+        1.2,
+        1.3
+      ]
+    },
+    "R45": {
+      "row": 45,
+      "label": "C. CHANNEL MIX (% of new memberships)",
+      "val": null,
+      "vals": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "R46": {
+      "row": 46,
+      "label": "Channel",
+      "val": 2026,
+      "vals": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030,
+        2031
+      ]
+    },
+    "R47": {
+      "row": 47,
+      "label": "Paid social",
+      "val": 0.52,
+      "vals": [
+        0.52,
+        0.48,
+        0.43,
+        0.38,
+        0.34,
+        0.31
+      ]
+    },
+    "R48": {
+      "row": 48,
+      "label": "Paid search",
+      "val": 0.15,
+      "vals": [
+        0.15,
+        0.16,
+        0.16,
+        0.16,
+        0.16,
+        0.15
+      ]
+    },
+    "R49": {
+      "row": 49,
+      "label": "Creator / UGC",
+      "val": 0.15,
+      "vals": [
+        0.15,
+        0.15,
+        0.15,
+        0.15,
+        0.14,
+        0.13
+      ]
+    },
+    "R50": {
+      "row": 50,
+      "label": "Affiliates & partnerships",
+      "val": 0.08,
+      "vals": [
+        0.08,
+        0.08,
+        0.09,
+        0.09,
+        0.1,
+        0.1
+      ]
+    },
+    "R51": {
+      "row": 51,
+      "label": "Member referral",
+      "val": 0,
+      "vals": [
+        0,
+        0.03,
+        0.06,
+        0.08,
+        0.1,
+        0.11
+      ]
+    },
+    "R52": {
+      "row": 52,
+      "label": "Organic",
+      "val": 0.1,
+      "vals": [
+        0.1,
+        0.1,
+        0.11,
+        0.12,
+        0.12,
+        0.13
+      ]
+    },
+    "R53": {
+      "row": 53,
+      "label": "B2B / corporate",
+      "val": 0,
+      "vals": [
+        0,
+        0,
+        0,
+        0.02,
+        0.04,
+        0.07
+      ]
+    },
+    "R54": {
+      "row": 54,
+      "label": "Total",
+      "val": 1,
+      "vals": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "R55": {
+      "row": 55,
+      "label": "Check: mix = 100%",
+      "val": "OK",
+      "vals": [
+        "OK",
+        "OK",
+        "OK",
+        "OK",
+        "OK",
+        "OK"
+      ]
+    },
+    "R57": {
+      "row": 57,
+      "label": "D. CAC BY CHANNEL (EUR per new member, after index)",
+      "val": null,
+      "vals": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "R58": {
+      "row": 58,
+      "label": "Paid social",
+      "val": 157.575757575758,
+      "vals": [
+        157.575757575758,
+        133.333333333333,
+        121.212121212121,
+        133.333333333333,
+        145.454545454545,
+        157.575757575758
+      ]
+    },
+    "R59": {
+      "row": 59,
+      "label": "Paid search",
+      "val": 104,
+      "vals": [
+        104,
+        88,
+        80,
+        88,
+        96,
+        104
+      ]
+    },
+    "R60": {
+      "row": 60,
+      "label": "Creator / UGC",
+      "val": 118.95,
+      "vals": [
+        118.95,
+        100.65,
+        91.5,
+        100.65,
+        109.8,
+        118.95
+      ]
+    },
+    "R61": {
+      "row": 61,
+      "label": "Affiliates & partnerships",
+      "val": 43.78,
+      "vals": [
+        43.78,
+        43.78,
+        43.78,
+        43.78,
+        43.78,
+        43.78
+      ]
+    },
+    "R62": {
+      "row": 62,
+      "label": "Member referral",
+      "val": 40,
+      "vals": [
+        40,
+        40,
+        40,
+        40,
+        40,
+        40
+      ]
+    },
+    "R63": {
+      "row": 63,
+      "label": "Organic",
+      "val": 6,
+      "vals": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    "R64": {
+      "row": 64,
+      "label": "B2B / corporate",
+      "val": 45,
+      "vals": [
+        45,
+        45,
+        45,
+        45,
+        45,
+        45
+      ]
+    },
+    "R66": {
+      "row": 66,
+      "label": "E. BLENDED CAC",
+      "val": null,
+      "vals": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "R67": {
+      "row": 67,
+      "label": "Blended channel CAC (mix-weighted)",
+      "val": 119.484293939394,
+      "vals": [
+        119.484293939394,
+        98.4799,
+        85.6464121212121,
+        88.6043666666667,
+        91.0845454545455,
+        92.6199848484849
+      ]
+    },
+    "R68": {
+      "row": 68,
+      "label": "Creative production & testing",
+      "val": 5,
+      "vals": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    "R69": {
+      "row": 69,
+      "label": "PROGRAMME CAC \u2014 booked in P&L marketing line",
+      "val": 124.484293939394,
+      "vals": [
+        124.484293939394,
+        103.4799,
+        90.6464121212121,
+        93.6043666666667,
+        96.0845454545455,
+        97.6199848484849
+      ]
+    },
+    "R70": {
+      "row": 70,
+      "label": "New memberships sold",
+      "val": 2000,
+      "vals": [
+        2000,
+        42739.2,
+        135242.68032,
+        233039.671611045,
+        333382.522576815,
+        421785.142464999
+      ]
+    },
+    "R71": {
+      "row": 71,
+      "label": "Growth team + acquisition tools (P&L period, from Overhead)",
+      "val": 14584.56,
+      "vals": [
+        14584.56,
+        58338.24,
+        161538.24,
+        161538.24,
+        213138.24,
+        264738.24
+      ]
+    },
+    "R72": {
+      "row": 72,
+      "label": "Overhead load per new member",
+      "val": 7.29228,
+      "vals": [
+        7.29228,
+        1.36498203054807,
+        1.19443240564134,
+        0.693179143633603,
+        0.639320376942947,
+        0.627661369134093
+      ]
+    },
+    "R73": {
+      "row": 73,
+      "label": "FULLY-LOADED CAC (programme + growth team + tools)",
+      "val": 131.776573939394,
+      "vals": [
+        131.776573939394,
+        104.844882030548,
+        91.8408445268535,
+        94.2975458103003,
+        96.7238658314884,
+        98.247646217619
+      ]
+    },
+    "R75": {
+      "row": 75,
+      "label": "F. COMPARISON TO THE FLAT CAC USED IN THE EARLIER PRO FORMA",
+      "val": null,
+      "vals": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "R76": {
+      "row": 76,
+      "label": "Flat CAC in earlier pro forma",
+      "val": 99,
+      "vals": [
+        99,
+        99,
+        99,
+        99,
+        99,
+        99
+      ]
+    },
+    "R77": {
+      "row": 77,
+      "label": "Programme CAC vs flat (EUR)",
+      "val": 25.484293939394,
+      "vals": [
+        25.484293939394,
+        4.47990000000002,
+        -8.35358787878788,
+        -5.39563333333332,
+        -2.91545454545454,
+        -1.38001515151514
+      ]
+    },
+    "R78": {
+      "row": 78,
+      "label": "Acquisition spend, bottom-up (EUR)",
+      "val": 248968.587878788,
+      "vals": [
+        248968.587878788,
+        4422648.14208,
+        12259263.7366641,
+        21813530.8693598,
+        32032908.144283,
+        41174659.2167493
+      ]
+    },
+    "R79": {
+      "row": 79,
+      "label": "Acquisition spend at flat CAC (EUR)",
+      "val": 198000,
+      "vals": [
+        198000,
+        4231180.8,
+        13389025.35168,
+        23070927.4894934,
+        33004869.7351047,
+        41756729.1040349
+      ]
+    },
+    "R80": {
+      "row": 80,
+      "label": "Difference in spend (EUR)",
+      "val": 50968.5878787879,
+      "vals": [
+        50968.5878787879,
+        191467.342080001,
+        -1129761.61501594,
+        -1257396.6201336,
+        -971961.590821676,
+        -582069.887285672
+      ]
+    },
+    "R82": {
+      "row": 82,
+      "label": "G. WHERE THE ACQUISITION MONEY GOES (EUR)",
+      "val": null,
+      "vals": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "R83": {
+      "row": 83,
+      "label": "Paid social",
+      "val": 163878.787878788,
+      "vals": [
+        163878.787878788,
+        2735308.8,
+        7049012.4288,
+        11807343.3616263,
+        16487281.1165261,
+        20603565.1410175
+      ]
+    },
+    "R84": {
+      "row": 84,
+      "label": "Paid search",
+      "val": 31200,
+      "vals": [
+        31200,
+        601767.936,
+        1731106.308096,
+        3281198.57628351,
+        5120755.54677988,
+        6579848.22245399
+      ]
+    },
+    "R85": {
+      "row": 85,
+      "label": "Creator / UGC",
+      "val": 35685,
+      "vals": [
+        35685,
+        645255.072,
+        1856205.787392,
+        3518316.44214775,
+        5124756.13705081,
+        6522274.55050752
+      ]
+    },
+    "R86": {
+      "row": 86,
+      "label": "Affiliates & partnerships",
+      "val": 7004.8,
+      "vals": [
+        7004.8,
+        149689.77408,
+        532883.208996864,
+        918222.914081839,
+        1459548.6838413,
+        1846575.35371177
+      ]
+    },
+    "R87": {
+      "row": 87,
+      "label": "Member referral",
+      "val": 0,
+      "vals": [
+        0,
+        51287.04,
+        324582.432768,
+        745726.949155343,
+        1333530.09030726,
+        1855854.626846
+      ]
+    },
+    "R88": {
+      "row": 88,
+      "label": "Organic",
+      "val": 1200,
+      "vals": [
+        1200,
+        25643.52,
+        89260.1690112,
+        167788.563559952,
+        240035.416255307,
+        328992.411122699
+      ]
+    },
+    "R89": {
+      "row": 89,
+      "label": "B2B / corporate",
+      "val": 0,
+      "vals": [
+        0,
+        0,
+        0,
+        209735.70444994,
+        600088.540638268,
+        1328623.19876475
+      ]
+    },
+    "R90": {
+      "row": 90,
+      "label": "Creative production & testing",
+      "val": 10000,
+      "vals": [
+        10000,
+        213696,
+        676213.4016,
+        1165198.35805522,
+        1666912.61288408,
+        2108925.712325
+      ]
+    },
+    "R91": {
+      "row": 91,
+      "label": "Total acquisition spend",
+      "val": 248968.587878788,
+      "vals": [
+        248968.587878788,
+        4422648.14208,
+        12259263.7366641,
+        21813530.8693598,
+        32032908.144283,
+        41174659.2167493
+      ]
+    },
+    "R92": {
+      "row": 92,
+      "label": "Check vs section F (should be zero)",
+      "val": 0,
+      "vals": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "R93": {
+      "row": 93,
+      "label": "Paid channels (social + search + creator) share of spend",
+      "val": 0.926879128989304,
+      "vals": [
+        0.926879128989304,
+        0.900440568651497,
+        0.867615278760804,
+        0.852996174323776,
+        0.834541549582281,
+        0.818602717184556
+      ]
+    }
+  }
+}
